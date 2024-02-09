@@ -12,7 +12,7 @@ Install Visual Studio: If you haven't already, download and install Visual Studi
 
 3. Open Maui Project: Open your Maui project in Visual Studio. 
 
-4. Choose Android Emulator: In Visual Studio, select the Android emulator you created in step 2 as your deployment target. You can do this by clicking on the dropdown menu next to the green "Play" button in the toolbar and selecting your emulator.
+4. Choose Android Emulator: In Visual Studio, select the Android emulator you created in step 2 as your deployment target. You can do this by clicking on the dropdown menu next to the green "Play" button in the toolbar and selecting your emulator. Alternatively, you can start the emulator first using the Android Device Manager and once it's loaded you can click the play button.
 
 5. Build and Run: Click the green "Play" button in the toolbar to build and run the Maui app on the selected Android emulator. Visual Studio will compile the project and deploy it to the emulator.
  
