@@ -1,0 +1,116 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BitcubeProject.MainPage"
+             xmlns:icon="clr-namespace:BitcubeProject">
+
+    <ScrollView>
+        <StackLayout Padding="0">
+        
+            <Image Source="banner.png"
+                   Aspect="AspectFill"
+                   HeightRequest="300"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Start"/>
+
+         
+            <Frame CornerRadius="75"
+                   HeightRequest="150"
+                   WidthRequest="150"
+                   Padding="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   Margin="0,-150,0,0">
+                <Image Source="myimage.jpg"
+                       HeightRequest="150"
+                       Aspect="AspectFit"/>
+            </Frame>
+
+            <!-- Content Section -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="20"
+                   Padding="20"
+                   Margin="20,0,20,20"
+                   HorizontalOptions="FillAndExpand">
+                <!-- Content -->
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                        <Label Text="{x:Static icon:IconFont.Call}" Style="{x:StaticResource GoogleFont}" FontSize="24" TextColor="ForestGreen"/>
+                        <Label Text="{x:Static icon:IconFont.Chat}" Style="{x:StaticResource GoogleFont}" FontSize="24" TextColor="SteelBlue" Margin="10,0,0,0"/>
+                    </StackLayout>
+
+                    <!-- First Name and Last Name -->
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Margin="0,-20,0,0">
+                        <Label Text="Sandile"
+                               FontSize="24"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Margin="10,20,0,0"/>
+                        <Label Text="Dhlamini"
+                               FontSize="24"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Margin="10,20,0,0"/>
+                    </StackLayout>
+
+                    <!-- Location -->
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                      
+                        <Label Text="{x:Static icon:IconFont.Location_on}" Style="{x:StaticResource GoogleFont}" FontSize="24" TextColor="Red" Margin="0,10,5,0" />
+
+                        
+                        <Label Text="Johannesburg" FontSize="18" TextColor="Gray" HorizontalOptions="Center" Margin="0,10,10,0" />
+                    </StackLayout>
+
+                    <!-- Bio -->
+                    <Label Text="I apologize for anything I post while hungry :)"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalOptions="Start"
+                           Margin="0,20,0,20"/>
+
+                    <!-- Interests -->
+                    <Label Text="Interests: Gaming and Software Development"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalOptions="Start"
+                           Margin="0,20"/>
+
+
+                    <StackLayout HorizontalOptions="Center" Margin="0,20,0,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            
+                            <StackLayout Grid.Column="0" HorizontalOptions="Center" Padding="0,0,20,0">
+                                <Label Text="Posts" FontSize="16" TextColor="Gray"/>
+                                <Label Text="675" FontSize="16" TextColor="Black"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="1" HorizontalOptions="Center" Padding="0,0,20,0">
+                                <Label Text="Following" FontSize="16" TextColor="Gray"/>
+                                <Label Text="1000" FontSize="16" TextColor="Black"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="2" HorizontalOptions="Center" Padding="0,0,20,0">
+                                <Label Text="Followers" FontSize="16" TextColor="Gray"/>
+                                <Label Text="900" FontSize="16" TextColor="Black"/>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                 
+                    <!-- Edit Button -->
+                    <Button Text="Edit Profile"
+                            Clicked="EditProfile_Clicked"
+                            TextColor="Black"
+                            BackgroundColor="SteelBlue"
+                            HorizontalOptions="Center"
+                            Margin="0,30"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
